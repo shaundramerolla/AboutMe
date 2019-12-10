@@ -7,10 +7,11 @@ if($_POST["submit"]) {
     $message=$_POST["message"];
     $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
     mail($recipient, $subject, $mailBody);
-}?>
+} ?>
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
         <title>Shaundra Merolla, Contact Me</title>
         <link href="css/WebStyle.css" type="text/css" rel="stylesheet"/>
     </head>
@@ -31,7 +32,7 @@ if($_POST["submit"]) {
             <label for="subject">Subject:</label>
         </p> <input type="text" id="subject" name="subject" required>
         <p>
-            <label for "message">Message:</label>
+            <label for="message">Message:</label>
         </p> <textarea name="message">Your Message Here</textarea>
         <p>
             <button type="submit" id="submit">Submit</button>
@@ -39,5 +40,21 @@ if($_POST["submit"]) {
         
         </form>
         </div>
+        <footer>
+          <nav>
+              <table>
+                <tr>
+                  <td><a href="AboutMe.html">About Me</a></td>
+                  <td><a href="Technical.html">Experience</a></td>
+                  <td><a href="Sadie.html">Sadie</a></td>
+                  <td><a href="Cooking.html">Cooking</a></td>
+                  <td><a href="Travels.html">Travels</a></td>
+                  <td><a href="Music.html">Music</a></td>
+                  <td><a href="Contact.html">Contact Me</a></td>
+                </tr>
+              </table>
+            </nav>
+        </footer>
+        <script src="FormValidation.js"></script>
     </body>
 </html>
